@@ -1,0 +1,7 @@
+require monitor;
+
+lang-imp test_V;
+from test_V enter comm;
+from comm enter chawilator;
+
+nogui.close(this);
