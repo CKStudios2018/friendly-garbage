@@ -1,0 +1,28 @@
+reuire monitor;
+
+lang-imp testV;
+lang-imp SYS-IMP-AI;
+
+from testV enter assets;
+from assets enter demo;
+from demo enter all;
+from testV enter mlAI;
+from mlAI enter all;
+
+from SYS-IMP-AI enter clas-forme;
+
+for('token'){
+    class.priv.tok.access(tok2);
+    class.pub.tok.access(tok2);
+
+    class tok2{
+        ceena.rcf('json').to('SYSl');
+        token uses('token').from('config.json');
+    }
+}
+
+for('login'){
+    twitch.token(do('stream'));
+}
+
+for('stream') do('login');
